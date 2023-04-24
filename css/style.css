@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+a:hover {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 251, 0);
+}
+
+th,
+td {
+  padding: 0.25rem;
+}
+
+h1#idh1 {
+  display: inline;
+}
+
+#pixHeader {
+  background-color: bisque;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  padding: 0px 20px;
+  overflow: scroll;
+}

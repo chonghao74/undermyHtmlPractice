@@ -1,0 +1,13 @@
+@charset "utf=8";
+
+html {
+  font-size: 20px;
+}
+
+.emtest {
+  font-size: 1.6em;
+}
+
+.remtest {
+  font-size: 1.6rem;
+}

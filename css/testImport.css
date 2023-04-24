@@ -1,0 +1,16 @@
+@charset "utf-8";
+img {
+  height: 200px;
+}
+
+h1 {
+  color: skyblue;
+  font-size: 30px;
+}
+
+label {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  width: 1000px;
+}

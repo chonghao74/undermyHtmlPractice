@@ -1,0 +1,95 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #c4c4c4;
+  padding: 0.5rem;
+}
+
+div label.lab-box {
+  display: block;
+}
+
+#lab-title {
+  font-size: 40px;
+}
+
+#lab-title-small {
+  font-size: 20px;
+}
+
+nav {
+  background-color: #000000;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  padding-left: 2rem;
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+}
+
+a.nav-a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 1s ease;
+}
+
+a.nav-a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(219, 32, 32);
+}
+
+section.default {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+div {
+  padding: 1rem 2rem;
+}
+
+div.left {
+  /* flex-grow: 4; */
+  flex: 4 1 300px;
+  flex-basis: 300px;
+}
+
+div.right {
+  /* flex-grow: 1; */
+  /* flex-basis: 500px; */
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4c4c4;
+}
+
+div h4 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav {
+    background-color: #000000;
+    position: static;
+    top: 0px;
+  }
+}

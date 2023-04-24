@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="../photos/login.png" />
+    <link rel="stylesheet" href="../css/formstyle.css" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="name">name</label><br />
+      <input
+        type="text"
+        name="testName"
+        id="name"
+        title="輸入帳號"
+        placeholder="帳號"
+      /><br /><br />
+      <label for="password">password</label><br />
+      <input
+        type="password"
+        name="testPassword"
+        id="password"
+        required
+        minlength="10"
+        maxlength="15"
+        title="輸入密碼密碼"
+        placeholder="密碼"
+      /><br /><br />
+      <label for="date">日期/時間</label><br />
+      <input type="datetime-local" name="testTime" id="date" required />
+      <br /><br />
+      <label for="age">年齡</label><br />
+      <input type="number" name="age" id="age" max="150" min="18" step="1" />
+      <br />
+      <label for="subscript">訂閱</label>
+      <input
+        type="checkbox"
+        name="testSubscript"
+        id="subscript"
+        checked
+      /><br /><br />
+      <label for="file">檔案上傳</label><br /><br />
+      <label for="range">權重</label><br />
+      0 <input type="range" value="10" min="0" max="100" step="1" /> 100
+      <br /><br />
+
+      <label>性別</label><br />
+      <label for="male">男生</label>
+      <input
+        class="radio"
+        id="male"
+        type="radio"
+        name="gen"
+        value="male"
+        checked
+        required
+      />
+      <label for="female">女生</label>
+      <input
+        class="radio"
+        id="female"
+        type="radio"
+        name="gen"
+        value="female"
+        required
+      />
+      <br /><br />
+      <label for="education">學歷</label><br />
+      <select name="edu" id="educatin" required>
+        <option></option>
+        <option value="0">Doctoral Degree (Ph.D.)</option>
+        <option value="1">Master's Degree</option>
+        <option value="2">Bachelor's Degree</option>
+      </select>
+      <br /><br />
+      <label for="area">地區</label><br />
+      <input list="areaList" type="text" id="area" name="area" />
+      <datalist id="areaList">
+        <option value="基隆市"></option>
+        <option value="台北市"></option>
+        <option value="2">新北市</option>
+        <option value="3">桃園市</option>
+        <option value="4">宜蘭市</option>
+      </datalist>
+      <br />
+      <br />
+      <label for="intro">介紹</label><br />
+      <textarea
+        name="intro"
+        id="intro"
+        cols="100"
+        rows="5"
+        placeholder="請詳盡自我介紹"
+      ></textarea
+      ><br />
+      <input type="file" name="filego" id="file" /><br /><br />
+      <button type="submit">提交</button>
+      <button type="reset">清除</button>
+      <!-- 測試註解-->
+    </form>
+  </body>
+</html>

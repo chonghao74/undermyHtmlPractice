@@ -1,0 +1,145 @@
+@charset "utf-8";
+body {
+  font-weight: 100;
+}
+
+h1 {
+  color: red;
+}
+
+.cls {
+  font-family: "Courier New", Courier, monospace;
+}
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #32d8f5;
+  padding: 5px;
+}
+
+#h11 {
+  color: chartreuse;
+}
+
+#h12 {
+  color: cyan;
+}
+
+#h13 {
+  color: darksalmon;
+}
+
+#h14,
+#h15,
+#h16 {
+  color: hotpink;
+}
+
+/* 測試 attribute  selector*/
+input[type="text"] {
+  color: olivedrab;
+}
+
+a[target="_blank"] {
+  font-size: 50px;
+}
+
+/* 測試 pseudo- classes */
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: rgb(77, 131, 84);
+}
+
+a:active {
+  color: rgb(238, 67, 81);
+}
+
+a:hover {
+  color: #f5d832;
+}
+
+input:focus {
+  background-color: darksalmon;
+}
+
+input:active {
+  background-color: pink;
+}
+
+tr:nth-child(2n) {
+  background-color: coral;
+}
+
+tr:nth-child(2n-1) {
+  background-color: rgb(80, 229, 255);
+}
+
+tr:nth-child(1) {
+  background-color: rgb(80, 255, 118);
+}
+
+/* 測試 pseudo- element */
+.pPEbefore::before {
+  content: "\2733";
+}
+
+.pPEafter::after {
+  content: "\01F4AB";
+}
+
+.pPEFirstLetter::first-letter {
+  font-size: 50px;
+}
+
+.pPEFirstLine::first-line {
+  font-size: 50px;
+}
+
+p::after {
+  content: url("../photos/success.png");
+  transform: scale(0.5);
+}
+
+.pSelection::selection {
+  background-color: darkmagenta;
+}
+
+/* pseudo-class 搭配 pseudo-element 測試 */
+#psandpe:hover::after {
+  color: skyblue;
+  content: "A";
+}
+
+/* descendant selector */
+#DS ul li {
+  font-size: 50px;
+}
+
+.div_border {
+  height: 100px;
+}
+
+#DS-31 {
+  border: 2px solid #4bb46e;
+}
+
+#DS-32 {
+  border: 2px solid #6d64e7;
+}
+
+#DS-33 {
+  border: 2px solid #e764a6;
+}
+
+#DS-34 {
+  border: 2px solid #dab655;
+}
+
+#DS-32 + #DS-33 {
+  margin-top: 30px;
+}

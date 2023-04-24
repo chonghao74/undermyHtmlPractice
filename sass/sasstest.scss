@@ -1,0 +1,41 @@
+@import '../sass/utinity';
+@mixin displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin displayFlexDirextion($directionData, $textColot) {
+    flex-direction: $directionData;
+    background-color: $textColot;
+}
+
+html{
+    background-color: $UtinityColor;
+}
+
+label.title1{
+    color: beige;
+    transition: all 0.5s ease-in;
+    &:hover{
+        color: $UtinityHover;
+    }
+}
+
+div.link{
+    @include displayFlex;
+    @include displayFlexDirextion(column, pink);
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    bottom: 20px;
+    
+    label{
+        display: block;
+        text-decoration: underline;
+        color: rgb(4, 16, 16);
+        text-align: center;
+    }
+}
