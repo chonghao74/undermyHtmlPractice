@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgba(203, 224, 218, 0.401);
+}
+
+label.title1 {
+  color: beige;
+  transition: all 0.5s ease-in;
+}
+
+label.title1:hover {
+  color: #e44e4e;
+}
+
+div.link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: pink;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  bottom: 20px;
+}
+
+footer label {
+  display: block;
+  text-decoration: underline;
+  color: #041010;
+  text-align: center;
+}
+/*# sourceMappingURL=sasstest.css.map */
